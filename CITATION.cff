@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use these skills or the PSOS specification, please cite the specification as below."
+title: "PSOS skills: free agent skills built to the Progressive Skill Ontology Standard"
+type: software
+authors:
+  - family-names: Grace
+    given-names: Jolyon
+    affiliation: Sicoru
+license: CC-BY-4.0
+repository-code: "https://github.com/Gracenet-Limited/psos-skills"
+url: "https://www.sicoru.com"
+keywords:
+  - agent skills
+  - PSOS
+  - LMCP
+  - progressive disclosure
+  - knowledge triage
+  - model context protocol
+preferred-citation:
+  type: report
+  title: "The Progressive Skill Ontology Standard (PSOS): A Specification for Multi-Source Knowledge Triage and Routing in Agent Skill Ecosystems"
+  authors:
+    - family-names: Grace
+      given-names: Jolyon
+      affiliation: Sicoru
+  publisher:
+    name: Figshare
+  year: 2026
+  version: "2.1"
+  doi: "10.6084/m9.figshare.33441154"
+  url: "https://doi.org/10.6084/m9.figshare.33441154"
+  license: CC-BY-4.0
+references:
+  - type: report
+    title: "The Local Multi-Agent Coordination Protocol (LMCP): A Ledger-Mediated Control Plane for Asynchronous Multi-Agent Collaboration on Shared Mutable State"
+    authors:
+      - family-names: Grace
+        given-names: Jolyon
+    publisher:
+      name: Figshare
+    year: 2026
+    doi: "10.6084/m9.figshare.33437977"
