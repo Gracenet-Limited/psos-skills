@@ -24,7 +24,7 @@ control plane for AI agents. Licensed [CC BY 4.0](LICENSE).
 | [`scripts/psos-check.mjs`](scripts/psos-check.mjs) | A dependency-free conformance checker for `SKILL.md` files (also runs in CI on every pull request) |
 | [`PAPERS.md`](PAPERS.md) | The ten published papers (PSOS, LMCP and the implementation reports), with DOIs |
 | [`CONDUCT.md`](CONDUCT.md) | The baseline conduct every skill here inherits (PSOS R41) |
-| [`docs/public-mcp.md`](docs/public-mcp.md) | Phase 2: a login-free, read-only MCP server for these skills |
+| [`docs/public-mcp.md`](docs/public-mcp.md) | The login-free, read-only MCP server for these skills (live), and how to connect |
 
 ## Use a skill
 

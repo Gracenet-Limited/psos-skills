@@ -1,7 +1,18 @@
 # Phase 2: a login-free, read-only MCP server for PSOS skills
 
-Status: **design, not built.** Phase 1 (this repository) is the files; phase 2 serves the same skills to any MCP client
-without an account, so an assistant can find and load a skill without anyone copying folders.
+Status: **live.** Phase 1 (this repository) is the files; phase 2 serves the same skills to any MCP client without an
+account, so an assistant can find and load a skill without anyone copying folders.
+
+## Connect
+
+Add this address to your MCP client as an HTTP server. No sign-in and no key are needed:
+
+`https://ujjisckqspndzyasptni.supabase.co/functions/v1/psos-public-mcp`
+
+- **Claude Code:** `claude mcp add --transport http psos https://ujjisckqspndzyasptni.supabase.co/functions/v1/psos-public-mcp`
+- **claude.ai and other clients:** add a custom connector (remote MCP server) with the address above.
+
+Then ask your assistant to call `skills_index`.
 
 ## What it serves
 
@@ -27,6 +38,6 @@ Referenced files (`references/`) are returned by `skills_section` as links, fetc
 
 ## Open items
 
-1. Hosting and the public address.
+1. Done: hosting and the public address (above).
 2. Referral capture on Claudia sign-up (the `ref` parameter is ignored until that is built).
 3. Listing in public MCP registries once it is live.
