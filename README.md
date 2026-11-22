@@ -15,10 +15,16 @@ control plane for AI agents. Licensed [CC BY 4.0](LICENSE).
 | [`skills/psos-skill-author`](skills/psos-skill-author/SKILL.md) | Write a new skill, or fix an existing one, so it meets PSOS: triggers written as situations, an index before any fetch, bounded sections, a pre-flight and a send check |
 | [`skills/psos-repo-check`](skills/psos-repo-check/SKILL.md) | Review a folder of skills against PSOS and report what passes, what fails and the smallest fix for each |
 | [`skills/sicoru-setup`](skills/sicoru-setup/SKILL.md) | Connect your AI assistant to a governed ledger, long-term memory and shared skills in a few minutes, free |
+| [`skills/psos-plan-before-code`](skills/psos-plan-before-code/SKILL.md) | Write a short plan before a change that spans files or has a choice of approach: steps with files and checks, options with a recommendation |
+| [`skills/psos-surgical-change`](skills/psos-surgical-change/SKILL.md) | Make only the change that was asked for, prove it with a check, and report what you noticed instead of fixing it quietly |
+| [`skills/psos-debug-signal-first`](skills/psos-debug-signal-first/SKILL.md) | Get a repeatable signal and find the cause before changing code; stop after three failed fixes |
+| [`skills/psos-handover`](skills/psos-handover/SKILL.md) | Hand work to the next session or person: verified state, decisions, dead ends and one next step |
+| [`skills/psos-codebase-map`](skills/psos-codebase-map/SKILL.md) | Find your way round a repository index first; use the map that exists, or generate a checked `CODEMAP.md` when none does |
+| [`skills/psos-design-slop-check`](skills/psos-design-slop-check/SKILL.md) | Review a generated interface for the tells of generic machine-made design and give the smallest fix for each |
 | [`scripts/psos-check.mjs`](scripts/psos-check.mjs) | A dependency-free conformance checker for `SKILL.md` files (also runs in CI on every pull request) |
 | [`PAPERS.md`](PAPERS.md) | The ten published papers (PSOS, LMCP and the implementation reports), with DOIs |
 | [`CONDUCT.md`](CONDUCT.md) | The baseline conduct every skill here inherits (PSOS R41) |
-| [`docs/public-mcp.md`](docs/public-mcp.md) | Phase 2: a login-free, read-only MCP server for these skills |
+| [`docs/public-mcp.md`](docs/public-mcp.md) | The login-free, read-only MCP server for these skills (live), and how to connect |
 
 ## Use a skill
 
@@ -61,6 +67,22 @@ and let your assistant connect it for you.
 
 See [`CITATION.cff`](CITATION.cff) (GitHub shows a "Cite this repository" button). For a specific requirement, cite the
 specification section and version DOI, for example *PSOS v2.1, §4.3 R7, doi:10.6084/m9.figshare.33441154.v3*.
+
+## Credits
+
+Every skill here is written in our own words. Several build on ideas other people published first; each skill's Sources
+section names them, and none of their text is reproduced. With thanks to:
+
+| Project | Licence (read from the repository, 2026-11-20) | Idea credited in |
+|---|---|---|
+| [Superpowers](https://github.com/obra/superpowers), Jesse Vincent | MIT | `psos-plan-before-code`, `psos-debug-signal-first` |
+| [mattpocock/skills](https://github.com/mattpocock/skills), Matt Pocock | MIT | `psos-plan-before-code`, `psos-debug-signal-first`, `psos-handover` |
+| [andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills), after Andrej Karpathy's observations | MIT (as declared in its README) | `psos-surgical-change` |
+| [Claude-Mem](https://github.com/thedotmack/claude-mem), Alex Newman | Apache-2.0 | `psos-handover` |
+| [Graphify](https://github.com/Graphify-Labs/graphify), Safi Shamsi and contributors | Apache-2.0 (earlier contributions MIT) | `psos-codebase-map` |
+| [Impeccable](https://github.com/pbakaus/impeccable), Paul Bakaus | Apache-2.0 | `psos-design-slop-check` |
+| [Hallmark](https://github.com/Nutlope/hallmark), Together AI | MIT | `psos-design-slop-check` |
+| [taste-skill](https://github.com/Leonxlnx/taste-skill), Leonxlnx | MIT | `psos-design-slop-check` |
 
 ## Contributing
 
